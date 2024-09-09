@@ -14,6 +14,7 @@ export class WebsocketGateway
 {
   private server: Server;
   afterInit(server: Server) {
+    this.server = server;
     console.log('WebsocketGateway initialized');
   }
 
